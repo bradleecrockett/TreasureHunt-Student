@@ -1,0 +1,16 @@
+2
+3
+Courtyard
+Ballroom
+Garden
+Dining Room
+2
+Gold 20
+Diamonds 40
+3
+Knife 10
+Dagger 20
+Sword 50
+2
+Ogre 10
+Troll 50
