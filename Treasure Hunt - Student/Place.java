@@ -2,11 +2,13 @@ import java.util.*;
 public class Place extends NamedThing
 {
     // instance variables - replace the example below with your own
+    private String description;
     private ArrayList<Item> items;
     private ArrayList<Entity> foes;
     
-    public Place(String n){
+    public Place(String n, String description){
        super(n);
+       this.description = description;
        items = new ArrayList<Item>();
        foes = new ArrayList<Entity>();
     }
@@ -29,7 +31,6 @@ public class Place extends NamedThing
     
     public void addItem(Item i ) {
         items.add(i);
-  
     }
     
     public void addFoe(Foe f) {
@@ -62,7 +63,7 @@ public class Place extends NamedThing
     
     
     public String toString() {    
-        String temp = "In the " + super.toString() + "\nItems: \n";
+        String temp = "In the " + super.toString() + " - " + description + "\nItems: \n";
         for (Item i : items)
            temp += "\t" + i.toString() + "\n";
         temp += "Foes: \n";
